@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact — Surya Surapaneni</title>
+    <meta name="description" content="Contact Surya Surapaneni — email, LinkedIn, phone, and a simple form." />
+    <link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header" role="banner">
+      <div class="container nav">
+        <a class="brand" href="index.html" data-nav>Surya Surapaneni</a>
+        <nav aria-label="Primary" role="navigation">
+          <ul>
+            <li><a href="index.html" data-nav>Home</a></li>
+            <li><a href="about.html" data-nav>About</a></li>
+            <li><a href="resume.html" data-nav>Resume</a></li>
+            <li><a href="projects.html" data-nav>Projects</a></li>
+            <li><a href="contact.html" data-nav>Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1" class="container" role="main">
+      <header>
+        <h1>Contact</h1>
+        <p class="lead">I’d be glad to connect. Email, LinkedIn, or the form below all work.</p>
+        <p>
+          <strong>Email:</strong> <a href="mailto:sksurapa@iu.edu">sksurapa@iu.edu</a><br>
+          <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/suryasurapaneni/" target="_blank" rel="noopener">linkedin.com/in/suryasurapaneni</a><br>
+          <strong>Phone:</strong> (317) 748-2929
+        </p>
+      </header>
+
+      <section aria-labelledby="contact-form-title">
+        <h2 id="contact-form-title">Send a message</h2>
+        <form id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Name <span aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" required autocomplete="name" aria-describedby="error-name">
+            <div id="error-name" class="error status" role="status" aria-live="polite" hidden></div>
+          </div>
+          <div class="field">
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" required autocomplete="email" inputmode="email" aria-describedby="error-email">
+            <div id="error-email" class="error status" role="status" aria-live="polite" hidden></div>
+          </div>
+          <div class="field">
+            <label for="message">Message <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" minlength="20" required aria-describedby="error-message"></textarea>
+            <div id="error-message" class="error status" role="status" aria-live="polite" hidden></div>
+            <div class="help">We’ll only use your info to reply.</div>
+          </div>
+          <button class="btn primary" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <p>© <span id="year"></span> · Built with HTML/CSS/JS · <a href="https://www.linkedin.com/in/suryasurapaneni/" rel="me noopener" target="_blank">LinkedIn</a></p>
+      </div>
+    </footer>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="js/main.js" defer></script>
+  </body>
+  </html>
+
+
+

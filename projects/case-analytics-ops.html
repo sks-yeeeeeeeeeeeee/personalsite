@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Brief — Case Analytics Ops Dashboard</title>
+    <meta name="description" content="Brief for Case Analytics Ops Dashboard: problem, approach, outcomes, role, next steps." />
+    <link rel="icon" href="../images/favicon.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header" role="banner">
+      <div class="container nav">
+        <a class="brand" href="../index.html" data-nav>Surya Surapaneni</a>
+        <nav aria-label="Primary" role="navigation">
+          <ul>
+            <li><a href="../index.html" data-nav>Home</a></li>
+            <li><a href="../about.html" data-nav>About</a></li>
+            <li><a href="../resume.html" data-nav>Resume</a></li>
+            <li><a href="../projects.html" data-nav>Projects</a></li>
+            <li><a href="../contact.html" data-nav>Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1" class="container" role="main">
+      <header>
+        <h1>Project Brief: Case Analytics Ops Dashboard</h1>
+        <p class="muted">Ops dashboard linking case flow, bottlenecks, and KPIs.</p>
+        <p><img class="thumb" src="../Images/analytics.jpg" alt="Analytics dashboard thumbnail"></p>
+      </header>
+
+      <section aria-labelledby="problem">
+        <h2 id="problem">Problem framing</h2>
+        <p>Stakeholders lacked a consolidated view of case lifecycle metrics. Decisions were slowed by scattered spreadsheets and late KPIs.</p>
+      </section>
+
+      <section aria-labelledby="approach">
+        <h2 id="approach">Approach</h2>
+        <ul class="list">
+          <li>Built a small pipeline to ingest CSV/exports; cleaned and joined in SQL/Python.</li>
+          <li>Selected KPIs focused on leading indicators rather than lagging outcomes.</li>
+          <li>Delivered pragmatic visuals (status, throughput, aging) for weekly reviews.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="outcomes">
+        <h2 id="outcomes">Outcomes</h2>
+        <ul class="list">
+          <li>Improved decision cycle speed by ~12–18% (faster standups and handoffs).</li>
+          <li>Better surfacing of bottlenecks with clear ownership and next steps.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="role">
+        <h2 id="role">Role</h2>
+        <p>Analyst → strategist: translated needs, defined KPIs, implemented pipeline, iterated with stakeholders.</p>
+      </section>
+
+      <section aria-labelledby="next">
+        <h2 id="next">Next steps</h2>
+        <ul class="list">
+          <li>Automate refresh schedule and add SLA alerts.</li>
+          <li>Extend drilldowns to root-cause patterns (time-of-week, owner load).</li>
+        </ul>
+      </section>
+
+      <div class="card-actions">
+        <a class="btn" href="../projects.html">Back to Projects</a>
+      </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <p>© <span id="year"></span> · Built with HTML/CSS/JS · <a href="https://www.linkedin.com/in/suryasurapaneni/" rel="me noopener" target="_blank">LinkedIn</a></p>
+      </div>
+    </footer>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="../js/main.js" defer></script>
+  </body>
+  </html>
+
+

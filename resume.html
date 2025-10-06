@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume — Surya Surapaneni</title>
+    <meta name="description" content="Accessible HTML resume for Surya Surapaneni — Education, Experience, Skills." />
+    <link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header" role="banner">
+      <div class="container nav">
+        <a class="brand" href="index.html" data-nav>Surya Surapaneni</a>
+        <nav aria-label="Primary" role="navigation">
+          <ul>
+            <li><a href="index.html" data-nav>Home</a></li>
+            <li><a href="about.html" data-nav>About</a></li>
+            <li><a href="resume.html" data-nav>Resume</a></li>
+            <li><a href="projects.html" data-nav>Projects</a></li>
+            <li><a href="contact.html" data-nav>Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1" class="container" role="main">
+      <header>
+        <h1>Resume</h1>
+        <p class="lead">MSIS @ Kelley — Finance-to-Strategy, with an AI edge.</p>
+        <p><a href="#" class="btn download" aria-disabled="true">Download PDF (optional to add later)</a></p>
+      </header>
+
+      <section class="resume-section" aria-labelledby="education">
+        <h2 id="education">Education</h2>
+        <div class="card">
+          <h3>Kelley School of Business — MSIS</h3>
+          <p class="muted">Focus: Analytics, Product, and Strategy</p>
+        </div>
+      </section>
+
+      <section class="resume-section" aria-labelledby="experience">
+        <h2 id="experience">Experience</h2>
+        <div class="card">
+          <h3>Business/Strategy Intern — Example Company</h3>
+          <ul class="list">
+            <li>Analyzed financial data to inform product strategy priorities.</li>
+            <li>Built a dashboard to track KPIs and reduce decision time.</li>
+            <li>Collaborated with cross-functional teams to align metrics to goals.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Operations/Analytics Intern — Example Org</h3>
+          <ul class="list">
+            <li>Developed SQL/Python scripts to clean and join datasets.</li>
+            <li>Prototyped an AI-assisted analysis workflow for faster insights.</li>
+            <li>Presented findings to stakeholders with clear, actionable recommendations.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section" aria-labelledby="skills">
+        <h2 id="skills">Skills</h2>
+        <p>
+          <span class="badge">Finance</span>
+          <span class="badge">SQL</span>
+          <span class="badge">Python</span>
+          <span class="badge">HTML/CSS/JS</span>
+          <span class="badge">SAP basics</span>
+          <span class="badge">RPA awareness</span>
+          <span class="badge">Product/Strategy</span>
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <p>© <span id="year"></span> · Built with HTML/CSS/JS · <a href="https://www.linkedin.com/in/suryasurapaneni/" rel="me noopener" target="_blank">LinkedIn</a></p>
+      </div>
+    </footer>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="js/main.js" defer></script>
+  </body>
+  </html>
+
+
